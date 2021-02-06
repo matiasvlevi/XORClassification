@@ -63,6 +63,6 @@ class Data {
             fill(0,255,100);
         }
 
-        ellipse(this.pos.x,this.pos.y,6,6);
+        ellipse(this.pos.x,this.pos.y,4,4);
     }
 }
