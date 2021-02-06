@@ -8,4 +8,4 @@ open the index.html file in your preferred browser <br />or simply click this li
 
 <iframe src="https://raw.githack.com/matiasvlevi/XORClassification/master/index.html" >
 
-</iframe
+</iframe>
