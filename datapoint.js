@@ -34,7 +34,7 @@ function drawSections() {
     rect(0,0,wnx/2,wny/2)
 }
 function distrib(x,y) {
-    let t = ''
+    let t = '';
     if (x > wnx/2 && y < wny/2 || x < wnx/2 && y > wny/2) {
         t = 1;
     } else {
@@ -54,6 +54,6 @@ class Data {
         } else {
             fill(0,255,100);
         }
-        ellipse(this.pos.x,this.pos.y,2,2);
+        ellipse(this.pos.x,this.pos.y,4,4);
     }
 }
