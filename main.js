@@ -18,8 +18,8 @@ function draw() {
     drawSections();
     for (data of dataset) {
         let input = [
-            map(data.pos.x,0,wnx,0,1),
-            map(data.pos.y,0,wny,0,1)
+            map(data.x, 0, wnx, 0, 1),
+            map(data.y, 0, wny, 0, 1)
         ];
         let output = [
             data.type

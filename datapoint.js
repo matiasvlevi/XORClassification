@@ -1,25 +1,26 @@
+const ran = (a, b) => Math.random(1) * (b - a) + a;
 function initData() {
     for (let i = 0; i < datasetSize/4; i++) {
-        let x = random(0,wnx/2);
-        let y = random(0,wny/2);
+        let x = ran(0,wnx/2);
+        let y = ran(0,wny/2);
         let t = distrib(x,y);
         dataset.push(new Data(x,y,t));
     }
     for (let i = 0; i < datasetSize/4; i++) {
-        let x = random(0,wnx/2);
-        let y = random((wny/2),wny);
+        let x = ran(0,wnx/2);
+        let y = ran((wny/2),wny);
         let t = distrib(x,y);
         dataset.push(new Data(x,y,t));
     }
     for (let i = 0; i < datasetSize/4; i++) {
-        let x = random(wnx/2,wnx);
-        let y = random(0,wny/2);
+        let x = ran(wnx/2,wnx);
+        let y = ran(0,wny/2);
         let t = distrib(x,y);
         dataset.push(new Data(x,y,t));
     }
     for (let i = 0; i < datasetSize/4; i++) {
-        let x = random(wnx/2,wnx);
-        let y = random(wny/2,wny);
+        let x = ran(wnx/2,wnx);
+        let y = ran(wny/2,wny);
         let t = distrib(x,y);
         dataset.push(new Data(x,y,t));
     }
@@ -44,7 +45,8 @@ function distrib(x,y) {
 }
 class Data {
     constructor(x,y,t) {
-        this.pos = createVector(x,y);
+        this.x = x;
+        this.y = y;
         this.type = t;
     }
     render(t) {
@@ -54,6 +56,6 @@ class Data {
         } else {
             fill(0,255,100);
         }
-        ellipse(this.pos.x,this.pos.y,4,4);
+        ellipse(this.x,this.y,4,4);
     }
 }
